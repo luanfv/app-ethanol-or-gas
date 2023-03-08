@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7502358C29B92BEB00DE77AC /* Botão Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 7502358B29B92BEB00DE77AC /* Botão Back.png */; };
 		750A450429B90C5100026C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A450329B90C5100026C63 /* AppDelegate.swift */; };
 		750A450629B90C5100026C63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A450529B90C5100026C63 /* SceneDelegate.swift */; };
-		750A450829B90C5100026C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A450729B90C5100026C63 /* ViewController.swift */; };
-		750A450B29B90C5100026C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750A450929B90C5100026C63 /* Main.storyboard */; };
+		750A450829B90C5100026C63 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A450729B90C5100026C63 /* HomeVC.swift */; };
 		750A450D29B90C5200026C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750A450C29B90C5200026C63 /* Assets.xcassets */; };
 		750A451029B90C5200026C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750A450E29B90C5200026C63 /* LaunchScreen.storyboard */; };
+		750A451A29B90F1A00026C63 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A451929B90F1A00026C63 /* HomeScreen.swift */; };
+		750A451C29B9118700026C63 /* BG HOME.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A451B29B9118700026C63 /* BG HOME.png */; };
+		750A451E29B912A000026C63 /* LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A451D29B912A000026C63 /* LOGO.png */; };
+		750A452129B91AAC00026C63 /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A452029B91AAC00026C63 /* CalculatorVC.swift */; };
+		750A452429B91C6B00026C63 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A452329B91C6B00026C63 /* CalculatorScreen.swift */; };
+		750A452629B91D6300026C63 /* BG BLUR DARK.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A452529B91D6300026C63 /* BG BLUR DARK.png */; };
+		750A452829B922BD00026C63 /* LOGO menor.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A452729B922BD00026C63 /* LOGO menor.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7502358B29B92BEB00DE77AC /* Botão Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Botão Back.png"; sourceTree = "<group>"; };
 		750A450029B90C5100026C63 /* AppAlcoolOuGasolina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAlcoolOuGasolina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750A450329B90C5100026C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		750A450529B90C5100026C63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		750A450729B90C5100026C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		750A450A29B90C5100026C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		750A450729B90C5100026C63 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		750A450C29B90C5200026C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750A450F29B90C5200026C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750A451129B90C5200026C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		750A451929B90F1A00026C63 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		750A451B29B9118700026C63 /* BG HOME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG HOME.png"; sourceTree = "<group>"; };
+		750A451D29B912A000026C63 /* LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO.png; sourceTree = "<group>"; };
+		750A452029B91AAC00026C63 /* CalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
+		750A452329B91C6B00026C63 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
+		750A452529B91D6300026C63 /* BG BLUR DARK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG BLUR DARK.png"; sourceTree = "<group>"; };
+		750A452729B922BD00026C63 /* LOGO menor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LOGO menor.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,54 @@
 		750A450229B90C5100026C63 /* AppAlcoolOuGasolina */ = {
 			isa = PBXGroup;
 			children = (
+				750A451F29B91A8100026C63 /* Calculator */,
+				750A451729B90EEC00026C63 /* Home */,
 				750A450329B90C5100026C63 /* AppDelegate.swift */,
 				750A450529B90C5100026C63 /* SceneDelegate.swift */,
-				750A450729B90C5100026C63 /* ViewController.swift */,
-				750A450929B90C5100026C63 /* Main.storyboard */,
 				750A450C29B90C5200026C63 /* Assets.xcassets */,
+				750A451B29B9118700026C63 /* BG HOME.png */,
 				750A450E29B90C5200026C63 /* LaunchScreen.storyboard */,
 				750A451129B90C5200026C63 /* Info.plist */,
+				750A451D29B912A000026C63 /* LOGO.png */,
+				750A452529B91D6300026C63 /* BG BLUR DARK.png */,
+				750A452729B922BD00026C63 /* LOGO menor.png */,
+				7502358B29B92BEB00DE77AC /* Botão Back.png */,
 			);
 			path = AppAlcoolOuGasolina;
+			sourceTree = "<group>";
+		};
+		750A451729B90EEC00026C63 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				750A451829B90EF900026C63 /* Screen */,
+				750A450729B90C5100026C63 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		750A451829B90EF900026C63 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				750A451929B90F1A00026C63 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		750A451F29B91A8100026C63 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				750A452229B91BF800026C63 /* Screen */,
+				750A452029B91AAC00026C63 /* CalculatorVC.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		750A452229B91BF800026C63 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				750A452329B91C6B00026C63 /* CalculatorScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +178,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750A452629B91D6300026C63 /* BG BLUR DARK.png in Resources */,
+				750A451E29B912A000026C63 /* LOGO.png in Resources */,
+				7502358C29B92BEB00DE77AC /* Botão Back.png in Resources */,
+				750A451C29B9118700026C63 /* BG HOME.png in Resources */,
 				750A451029B90C5200026C63 /* LaunchScreen.storyboard in Resources */,
 				750A450D29B90C5200026C63 /* Assets.xcassets in Resources */,
-				750A450B29B90C5100026C63 /* Main.storyboard in Resources */,
+				750A452829B922BD00026C63 /* LOGO menor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +195,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				750A450829B90C5100026C63 /* ViewController.swift in Sources */,
+				750A452129B91AAC00026C63 /* CalculatorVC.swift in Sources */,
+				750A451A29B90F1A00026C63 /* HomeScreen.swift in Sources */,
+				750A450829B90C5100026C63 /* HomeVC.swift in Sources */,
 				750A450429B90C5100026C63 /* AppDelegate.swift in Sources */,
 				750A450629B90C5100026C63 /* SceneDelegate.swift in Sources */,
+				750A452429B91C6B00026C63 /* CalculatorScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		750A450929B90C5100026C63 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				750A450A29B90C5100026C63 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		750A450E29B90C5200026C63 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,13 +337,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppAlcoolOuGasolina/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,9 +355,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = luanfv.AppAlcoolOuGasolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,13 +370,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppAlcoolOuGasolina/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,9 +388,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = luanfv.AppAlcoolOuGasolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
