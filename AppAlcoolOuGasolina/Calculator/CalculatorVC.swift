@@ -9,6 +9,7 @@ import UIKit
 
 class CalculatorVC: UIViewController {
     var screen: CalculatorScreen?
+    var alert: Alert?
 
     override func loadView() {
         screen = CalculatorScreen()
@@ -17,12 +18,42 @@ class CalculatorVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        alert = Alert(controller: self)
         screen?.delegate(delegate: self)
+    }
+    
+    func validateTextFields() -> Bool {
+        guard let ethanolPrice = screen?.ethanolPriceTextField.text else { return false }
+        guard let gasPrice = screen?.gasPriceTextField.text else { return false }
+        
+        if ethanolPrice.isEmpty && gasPrice.isEmpty {
+            alert?.showAlertInformation(title: "Atenção", message: "Informe os valores do álcool e da gasolina")
+            
+            return false
+        }
+        
+        if ethanolPrice.isEmpty {
+            alert?.showAlertInformation(title: "Atenção", message: "Informe os valore do álcool")
+            
+            return false
+        }
+        
+        if gasPrice.isEmpty {
+            alert?.showAlertInformation(title: "Atenção", message: "Informe o valor da gasolina")
+            
+            return false
+        }
+        
+        return true
     }
 }
 
 extension CalculatorVC: CalculatorScreenDelegate {
     func tappedCalculateButton() {
+        if validateTextFields() {
+            return
+        }
+        
         let formatter =  NumberFormatter()
         formatter.numberStyle = .decimal
         

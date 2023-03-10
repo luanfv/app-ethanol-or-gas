@@ -20,6 +20,7 @@
 		750A452429B91C6B00026C63 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A452329B91C6B00026C63 /* CalculatorScreen.swift */; };
 		750A452629B91D6300026C63 /* BG BLUR DARK.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A452529B91D6300026C63 /* BG BLUR DARK.png */; };
 		750A452829B922BD00026C63 /* LOGO menor.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A452729B922BD00026C63 /* LOGO menor.png */; };
+		753ED03829BBD17300668517 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ED03729BBD17300668517 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		750A452329B91C6B00026C63 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 		750A452529B91D6300026C63 /* BG BLUR DARK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG BLUR DARK.png"; sourceTree = "<group>"; };
 		750A452729B922BD00026C63 /* LOGO menor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LOGO menor.png"; sourceTree = "<group>"; };
+		753ED03729BBD17300668517 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		750A450229B90C5100026C63 /* AppAlcoolOuGasolina */ = {
 			isa = PBXGroup;
 			children = (
+				753ED03629BBD15500668517 /* Alert */,
 				750A451F29B91A8100026C63 /* Calculator */,
 				750A451729B90EEC00026C63 /* Home */,
 				750A450329B90C5100026C63 /* AppDelegate.swift */,
@@ -118,6 +121,14 @@
 				750A452329B91C6B00026C63 /* CalculatorScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		753ED03629BBD15500668517 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				753ED03729BBD17300668517 /* Alert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				750A450429B90C5100026C63 /* AppDelegate.swift in Sources */,
 				750A450629B90C5100026C63 /* SceneDelegate.swift in Sources */,
 				750A452429B91C6B00026C63 /* CalculatorScreen.swift in Sources */,
+				753ED03829BBD17300668517 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
