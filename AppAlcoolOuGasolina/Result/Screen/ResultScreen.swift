@@ -1,33 +1,32 @@
 //
-//  CalculatorScreen.swift
+//  ResultScreen.swift
 //  AppAlcoolOuGasolina
 //
-//  Created by Luan Franca Vieira on 08/03/23.
+//  Created by Luan Franca Vieira on 10/03/23.
 //
 
 import UIKit
 
-protocol CalculatorScreenDelegate: AnyObject {
-    func tappedCalculateButton()
+protocol ResultScreenDelegate: AnyObject {
     func tappedBackButton()
+    func tappedCalculateButton()
 }
 
-class CalculatorScreen: UIView {
-    private weak var delegate: CalculatorScreenDelegate?
+class ResultScreen: UIView {
+    private weak var delegate: ResultScreenDelegate?
     
-    public func delegate(delegate: CalculatorScreenDelegate) {
+    public func delegate(delegate: ResultScreenDelegate?) {
         self.delegate = delegate
     }
     
-    lazy var backgroundImage: UIImageView = {
-       let image = UIImageView()
+    lazy var backgroundImageView: UIImageView = {
+        let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "BG BLUR DARK.png")
+        image.image = UIImage(named: "BG BLUR")
         image.contentMode = .scaleAspectFit
         
         return image
     }()
-    
     lazy var logoAppImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -37,36 +36,29 @@ class CalculatorScreen: UIView {
         return image
     }()
     
-    lazy var ethanolPriceTextField: UITextField = {
-        let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.autocorrectionType = .no
-        textField.backgroundColor = .white
-        textField.borderStyle = .roundedRect
-        textField.keyboardType = .decimalPad
-        textField.placeholder = "Preço do Álcool"
-        textField.textColor = .darkGray
+    lazy var sentenceLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 31)
+        label.text = "Abasteça com:"
         
-        return textField
+        return label
     }()
     
-    lazy var gasPriceTextField: UITextField = {
-        let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.autocorrectionType = .no
-        textField.backgroundColor = .white
-        textField.borderStyle = .roundedRect
-        textField.keyboardType = .decimalPad
-        textField.placeholder = "Preço da Gasolina"
-        textField.textColor = .darkGray
+    lazy var resultLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 73)
         
-        return textField
+        return label
     }()
     
     lazy var calculateButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Calcular", for: .normal)
+        button.setTitle("Calcular novamente", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         button.setTitleColor(.white, for: .normal)
         button.clipsToBounds = true
@@ -97,10 +89,10 @@ class CalculatorScreen: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        addSubview(backgroundImage)
+        addSubview(backgroundImageView)
         addSubview(logoAppImageView)
-        addSubview(ethanolPriceTextField)
-        addSubview(gasPriceTextField)
+        addSubview(sentenceLabel)
+        addSubview(resultLabel)
         addSubview(calculateButton)
         addSubview(backButton)
         
@@ -113,27 +105,23 @@ class CalculatorScreen: UIView {
     
     func configConstraints() {
         NSLayoutConstraint.activate([
-            backgroundImage.topAnchor.constraint(equalTo: topAnchor),
-            backgroundImage.leadingAnchor.constraint(equalTo: leadingAnchor),
-            backgroundImage.trailingAnchor.constraint(equalTo: trailingAnchor),
-            backgroundImage.bottomAnchor.constraint(equalTo: bottomAnchor),
+            backgroundImageView.topAnchor.constraint(equalTo: topAnchor),
+            backgroundImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
             backButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             backButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             
-            logoAppImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 150),
+            logoAppImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 60),
             logoAppImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             logoAppImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+
+            sentenceLabel.topAnchor.constraint(equalTo: logoAppImageView.bottomAnchor, constant: 180),
+            sentenceLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            ethanolPriceTextField.topAnchor.constraint(equalTo: logoAppImageView.bottomAnchor, constant: 134),
-            ethanolPriceTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            ethanolPriceTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            ethanolPriceTextField.heightAnchor.constraint(equalToConstant: 45),
-            
-            gasPriceTextField.topAnchor.constraint(equalTo: ethanolPriceTextField.bottomAnchor, constant: 16),
-            gasPriceTextField.leadingAnchor.constraint(equalTo: ethanolPriceTextField.leadingAnchor),
-            gasPriceTextField.trailingAnchor.constraint(equalTo: ethanolPriceTextField.trailingAnchor),
-            gasPriceTextField.heightAnchor.constraint(equalTo: ethanolPriceTextField.heightAnchor),
+            resultLabel.topAnchor.constraint(equalTo: sentenceLabel.bottomAnchor, constant: 12),
+            resultLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             calculateButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -135),
             calculateButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 60),

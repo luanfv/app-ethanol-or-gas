@@ -21,6 +21,9 @@
 		750A452629B91D6300026C63 /* BG BLUR DARK.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A452529B91D6300026C63 /* BG BLUR DARK.png */; };
 		750A452829B922BD00026C63 /* LOGO menor.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A452729B922BD00026C63 /* LOGO menor.png */; };
 		753ED03829BBD17300668517 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ED03729BBD17300668517 /* Alert.swift */; };
+		753ED03B29BBD5F600668517 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ED03A29BBD5F600668517 /* ResultVC.swift */; };
+		753ED03E29BBD63000668517 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ED03D29BBD63000668517 /* ResultScreen.swift */; };
+		753ED04029BBD72100668517 /* BG BLUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 753ED03F29BBD72100668517 /* BG BLUR.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		750A452529B91D6300026C63 /* BG BLUR DARK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG BLUR DARK.png"; sourceTree = "<group>"; };
 		750A452729B922BD00026C63 /* LOGO menor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LOGO menor.png"; sourceTree = "<group>"; };
 		753ED03729BBD17300668517 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		753ED03A29BBD5F600668517 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		753ED03D29BBD63000668517 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
+		753ED03F29BBD72100668517 /* BG BLUR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG BLUR.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		750A450229B90C5100026C63 /* AppAlcoolOuGasolina */ = {
 			isa = PBXGroup;
 			children = (
+				753ED03929BBD5D400668517 /* Result */,
 				753ED03629BBD15500668517 /* Alert */,
 				750A451F29B91A8100026C63 /* Calculator */,
 				750A451729B90EEC00026C63 /* Home */,
@@ -85,6 +92,7 @@
 				750A452529B91D6300026C63 /* BG BLUR DARK.png */,
 				750A452729B922BD00026C63 /* LOGO menor.png */,
 				7502358B29B92BEB00DE77AC /* Botão Back.png */,
+				753ED03F29BBD72100668517 /* BG BLUR.png */,
 			);
 			path = AppAlcoolOuGasolina;
 			sourceTree = "<group>";
@@ -129,6 +137,23 @@
 				753ED03729BBD17300668517 /* Alert.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		753ED03929BBD5D400668517 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				753ED03C29BBD60E00668517 /* Screen */,
+				753ED03A29BBD5F600668517 /* ResultVC.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		753ED03C29BBD60E00668517 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				753ED03D29BBD63000668517 /* ResultScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +218,7 @@
 				750A451E29B912A000026C63 /* LOGO.png in Resources */,
 				7502358C29B92BEB00DE77AC /* Botão Back.png in Resources */,
 				750A451C29B9118700026C63 /* BG HOME.png in Resources */,
+				753ED04029BBD72100668517 /* BG BLUR.png in Resources */,
 				750A451029B90C5200026C63 /* LaunchScreen.storyboard in Resources */,
 				750A450D29B90C5200026C63 /* Assets.xcassets in Resources */,
 				750A452829B922BD00026C63 /* LOGO menor.png in Resources */,
@@ -207,8 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				750A452129B91AAC00026C63 /* CalculatorVC.swift in Sources */,
+				753ED03B29BBD5F600668517 /* ResultVC.swift in Sources */,
 				750A451A29B90F1A00026C63 /* HomeScreen.swift in Sources */,
 				750A450829B90C5100026C63 /* HomeVC.swift in Sources */,
+				753ED03E29BBD63000668517 /* ResultScreen.swift in Sources */,
 				750A450429B90C5100026C63 /* AppDelegate.swift in Sources */,
 				750A450629B90C5100026C63 /* SceneDelegate.swift in Sources */,
 				750A452429B91C6B00026C63 /* CalculatorScreen.swift in Sources */,
